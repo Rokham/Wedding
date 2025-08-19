@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Wedding Vows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Language Selection Screen -->
+    <div id="language-selection" class="language-selection">
+        <div class="selection-container">
+            <h1 class="selection-title">🌿</h1>
+            <p class="selection-subtitle">Choose your language / زبان خود را انتخاب کنید</p>
+            <div class="language-buttons">
+                <button class="language-btn" data-lang="farsi">
+                    <span class="lang-text">فارسی</span>
+                    <span class="lang-subtitle">خطبه عقد آریایی</span>
+                </button>
+                <button class="language-btn" data-lang="english">
+                    <span class="lang-text">English</span>
+                    <span class="lang-subtitle">Aryan Wedding Vows</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title" id="main-title">Aryan Wedding Vows 🌿</h1>
+                <button class="language-toggle" id="language-toggle">
+                    <span id="toggle-text">فارسی</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Table of Contents -->
+        <div class="toc-container">
+            <button class="toc-toggle" id="toc-toggle">
+                <span id="toc-title">Table of Contents</span>
+                <span class="toc-arrow">▼</span>
+            </button>
+            <nav class="toc" id="toc">
+                <ul class="toc-list" id="toc-list">
+                    <!-- TOC items will be populated by JavaScript -->
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Content Sections -->
+        <main class="content">
+            <div id="content-sections">
+                <!-- Sections will be populated by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
