@@ -3,59 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Wedding Vows</title>
+    <title>Nazanin & Rokham Wedding Ceremony</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Language Selection Screen -->
-    <div id="language-selection" class="language-selection">
-        <div class="selection-container">
-            <h1 class="selection-title">🌿</h1>
-            <p class="selection-subtitle">Choose your language / زبان خود را انتخاب کنید</p>
-            <div class="language-buttons">
-                <button class="language-btn" data-lang="farsi">
-                    <span class="lang-text">فارسی</span>
-                    <span class="lang-subtitle">خطبه عقد آریایی</span>
-                </button>
-                <button class="language-btn" data-lang="english">
-                    <span class="lang-text">English</span>
-                    <span class="lang-subtitle">Aryan Wedding Vows</span>
-                </button>
+    <!-- Landing Page -->
+    <div id="landing-page" class="landing-page">
+        <div class="landing-content">
+            <div class="couple-names">
+                <h1>Nazanin & Rokham</h1>
+                <h2>Wedding Ceremony</h2>
+                <p class="wedding-date">Oct 5, 2025</p>
+            </div>
+            
+            <div class="language-selection">
+                <p class="select-language">Please select your preferred language:</p>
+                <div class="language-buttons">
+                    <button class="btn btn--primary language-btn" data-lang="english">
+                        English
+                    </button>
+                    <button class="btn btn--primary language-btn" data-lang="farsi">
+                        فارسی
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Main Content -->
-    <div id="main-content" class="main-content hidden">
+    <!-- Main Application -->
+    <div id="main-app" class="main-app hidden">
         <!-- Header -->
         <header class="header">
             <div class="header-content">
-                <h1 class="main-title" id="main-title">Aryan Wedding Vows 🌿</h1>
-                <button class="language-toggle" id="language-toggle">
-                    <span id="toggle-text">فارسی</span>
-                </button>
+                <div class="couple-info">
+                    <h3>Nazanin & Rokham</h3>
+                    <span class="wedding-date-small">Oct 5, 2025</span>
+                </div>
+                <div class="language-switcher">
+                    <button class="language-toggle" data-lang="english">English</button>
+                    <span class="language-divider">|</span>
+                    <button class="language-toggle" data-lang="farsi">فارسی</button>
+                </div>
             </div>
         </header>
 
-        <!-- Table of Contents -->
-        <div class="toc-container">
-            <button class="toc-toggle" id="toc-toggle">
-                <span id="toc-title">Table of Contents</span>
-                <span class="toc-arrow">▼</span>
-            </button>
-            <nav class="toc" id="toc">
-                <ul class="toc-list" id="toc-list">
-                    <!-- TOC items will be populated by JavaScript -->
-                </ul>
-            </nav>
-        </div>
+        <!-- Section Navigation -->
+        <nav class="section-nav">
+            <div class="nav-scroll-container">
+                <div class="nav-items" id="section-nav-items">
+                    <!-- Navigation items will be populated by JavaScript -->
+                </div>
+            </div>
+        </nav>
 
-        <!-- Content Sections -->
-        <main class="content">
-            <div id="content-sections">
-                <!-- Sections will be populated by JavaScript -->
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-container" id="content-container">
+                <!-- Content sections will be populated by JavaScript -->
             </div>
         </main>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
     </div>
 
     <script src="app.js"></script>
