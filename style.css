@@ -883,6 +883,25 @@ select.form-control {
   font-size: var(--font-size-sm);
 }
 
+/* Main Header Section - Separate and Prominent */
+.main-header-section {
+  background: var(--color-bg-3);
+  padding: var(--space-32) var(--space-20);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+.main-ceremony-title {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin: 0;
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  text-align: center;
+}
+
 /* Section Navigation */
 .section-nav {
   background: var(--color-surface);
@@ -1019,6 +1038,12 @@ select.form-control {
   flex-direction: row-reverse;
 }
 
+.app-farsi .main-ceremony-title {
+  font-family: 'Amiri', serif;
+  text-align: center;
+  direction: rtl;
+}
+
 .app-farsi .section-content {
   font-family: 'Amiri', serif;
   text-align: right;
@@ -1032,6 +1057,12 @@ select.form-control {
   font-family: 'Amiri', serif;
   text-align: center;
   direction: rtl;
+}
+
+.app-english .main-ceremony-title {
+  font-family: var(--font-family-base);
+  text-align: center;
+  direction: ltr;
 }
 
 .app-english .section-content {
@@ -1075,6 +1106,14 @@ select.form-control {
     padding: var(--space-20) var(--space-32);
   }
   
+  .main-header-section {
+    padding: var(--space-32) var(--space-32);
+  }
+  
+  .main-ceremony-title {
+    font-size: 3rem;
+  }
+  
   .content-container {
     padding: var(--space-32) var(--space-32);
   }
@@ -1110,6 +1149,16 @@ select.form-control {
   .nav-item {
     font-size: var(--font-size-md);
     padding: var(--space-8) var(--space-16);
+  }
+  
+  .main-ceremony-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-ceremony-title {
+    font-size: 4rem;
   }
 }
 
